@@ -7,8 +7,14 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            @include smartphone{
+                @include flex_column;
+            }
             li{
                 list-style: none;
+                @include smartphone{
+                    margin: 20px;
+                }
                 a{
                     @include btn-stlye;
                     margin: 10px;

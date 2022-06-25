@@ -1,4 +1,5 @@
 @import './utils.scss';
+@import './media-queries.scss';
 
 #info-hero{
     .continent{
@@ -12,17 +13,31 @@
         .container{
             width: 95%;
             height: 300px;
+            @include tablet{
+                height: 400px;
+            }
+            @include smartphone{
+                height: 500px;
+            }
             margin:50px auto ;
             @include flex_column;
             flex-direction: row;
             justify-content: space-between;
             background: $primary-color;
             border-radius: 20px;
-            
+           
             .paragraph{
                 width: 70%;
                 margin: auto;
                 text-align: left;
+                @include tablet{
+                    margin-left: 20px;
+                }
+                @include smartphone{
+                    width: 95%;
+                    margin: auto;
+                }
+
                 h1{
                     margin-bottom: 10px;
                 }
@@ -42,6 +57,11 @@
                 width: 200px;
                 height: 200px;
                 margin: 20px;
+                
+                @include smartphone{
+                    display: none;
+
+                }
             }
             
             

@@ -65,4 +65,9 @@ class UI {
         const input = document.querySelector('input')
         input.value = ''
     }
+
+    clearP(){
+        const result = document.querySelector('p')
+        result.textContent = ''
+    }
 }

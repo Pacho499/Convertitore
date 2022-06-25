@@ -2,6 +2,9 @@
 #hero{
     color: white;
     height: 90vh;
+    @include smartphone{
+        height: 85vh;
+    }
     background: url('../images/euro.jpg') no-repeat center center/cover;
     @include flex_column;
     .container{
@@ -47,9 +50,18 @@
                         width: 200px;
                         text-align: center;
                     }
-                    i{
+                    #right{
                         font-size: 22px;
                         margin: 10px;
+                        @include smartphone{
+                            display: none;
+                        }
+                    }
+                    #down{
+                        display: none;
+                        @include smartphone{
+                            display: block;
+                        }
                     }
                 }
             }
@@ -69,6 +81,7 @@
                     @include error-animation;
                     font-weight: 900;
                     font-size: 14px;
+                    padding-bottom: 10px;
                     position: absolute;
                     text-align: center;
                 }
@@ -76,10 +89,11 @@
                 p{
                     margin-top: 20px;
                     font-size: 18px;
+                    
                     @include result-animation;
                 }
                 a{
-                    margin-top: 50px;
+                    margin-top: 20px;
                     color: black;
                     text-decoration: none;
                     background-color: white;

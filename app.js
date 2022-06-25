@@ -16,6 +16,7 @@ function convert(e){
         ui.clearInput()
     })
     .catch (err =>{
+            ui.clearP()
             const div = document.createElement('div')
             const result = document.querySelector('.results')
             div.className = 'error'
