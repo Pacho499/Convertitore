@@ -1,0 +1,56 @@
+@import './utils.scss';
+
+#info-hero{
+    .continent{
+        text-align: center;
+        margin-top: 30px;
+        .title{
+            background: rgb(210, 194, 194);
+            padding: 10px;
+        }
+
+        .container{
+            width: 95%;
+            height: 300px;
+            margin:50px auto ;
+            @include flex_column;
+            flex-direction: row;
+            justify-content: space-between;
+            background: $primary-color;
+            border-radius: 20px;
+            
+            .paragraph{
+                width: 70%;
+                margin: auto;
+                text-align: left;
+                h1{
+                    margin-bottom: 10px;
+                }
+                p{
+                    margin-bottom: 20px;
+                }
+                a{
+                    @include btn-stlye;
+                    &:hover{
+                        @include btn-animation;
+                    }
+                }
+            }
+            
+                
+            img{
+                width: 200px;
+                height: 200px;
+                margin: 20px;
+            }
+            
+            
+        }
+        
+    }
+
+    
+
+
+    
+}

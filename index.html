@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/178dbdb861.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Convertitore di valute</title>
+</head>
+<body>
+    <!--Nav bar-->
+    <section id="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>CONVERTITORE DI VALUTE</h1>
+            </div>
+            <div class="section">
+                <a class="current" href="index.html">CONVERTI</a>
+                <a href="info.html">INFO VALUTE</a>
+            </div>
+        </div>
+    </section>
+
+    <!--hero section-->
+
+    <section id="hero">
+       <div class="container">
+
+           <!--form-->
+           <div class="top-side">
+               <h2>Seleziona quantita e valuta che intendi convertire!</h2>
+               <form>
+                   <input type="text" placeholder="quantità">
+                   <button>converti</button>
+                   <div class="select">
+                        <select id="from"></select>
+                        <i class="fa-solid fa-arrow-right" ></i>
+                        <select id="to"></select>
+                   </div>
+                   
+               </form>
+           </div>
+
+           <!--results-->
+           <div class="bot-side">
+               <h2>Ecco il tuo risultato</h2>
+               <div class="results">
+                   <p>Benvenuto</p>
+                   <a id="info" href="#">INFORMAZIONI SULLA VALUTA SCELTA</a>
+               </div>
+           </div>
+       </div>
+    </section>
+
+
+
+
+
+    <!--script-->
+    <script src="getData.js"></script>
+    <script src="interfaccia.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

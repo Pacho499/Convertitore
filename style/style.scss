@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap');
+@import './navbar.scss';
+@import './hero.scss';
+@import './info.scss';
+@import './chose.scss';
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    font-family:'Raleway', sans-serif;
+}

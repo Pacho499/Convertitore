@@ -1,0 +1,25 @@
+@import './utils.scss';
+#chose_continent{
+    margin-top: 20px;
+    .container{
+        @include container;
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            li{
+                list-style: none;
+                a{
+                    @include btn-stlye;
+                    margin: 10px;
+                    background: $primary-color;
+                    padding: 10px;
+                    border-radius: 20px;
+                    &:hover{
+                        @include btn-animation;
+                    }
+                }
+            }
+        }
+    }
+}

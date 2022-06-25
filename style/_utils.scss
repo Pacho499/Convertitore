@@ -1,0 +1,102 @@
+//COLOUR
+$background-btn-color: rgb(68, 55, 56);
+$primary-color:rgb(210, 194, 194);
+
+//MIXIN CLASSIC
+@mixin btn-stlye{
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+
+    &:hover{
+        background: rgb(68, 55, 56);
+        color: white;
+    }
+}
+
+@mixin container{
+    width: 90%;
+    margin: auto;
+}
+
+@mixin flex_column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+//MIXIN ANIMATION
+
+@mixin btn-animation{
+    animation-name: btn-select;
+    animation-duration: 1s;
+
+    @keyframes btn-select{
+        from{
+            background:$primary-color;
+            color: black;
+            
+        }
+        to{
+            background: $background-btn-color;
+            color: white;
+        }
+    }
+}
+
+@mixin error-animation{
+    animation-name: error;
+    animation-duration: 5s;
+
+    @keyframes error{
+        from{
+            background-color:rgba(0,0,0, 0.7);
+            color: red;
+        }
+        to{
+            background-color: red;
+            color: white;
+        }
+    }
+}
+
+@mixin result-animation{
+    animation-name:result;
+    animation-duration: 3s;
+
+    @keyframes result{
+        from{
+            color: rgba(0,0,0, 0.7);
+            position: relative;
+            left: 200px;
+        }
+        to{
+            color: white;
+            position: relative;
+            left: 0px;
+        }
+    }
+}
+
+@mixin hero-btn-animation{
+    animation-name: convert;
+    animation-duration: 1s;
+
+    @keyframes convert{
+        from{
+            background-color: white;
+            color: black;
+        }
+        to{
+            background-color: $background-btn-color;
+            color: white;
+        }
+    }
+}
+
+
+

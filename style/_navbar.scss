@@ -1,0 +1,35 @@
+@import './utils.scss';
+#navbar{
+    background: $primary-color;
+    
+    .container{
+        @include container;
+        @include flex_column;
+        flex-direction: row;
+        justify-content: space-between;      
+        height: 10vh;
+        .logo{
+            color: black;
+        }
+
+        
+       
+        a{
+            @include btn-stlye;
+            font-size: 12px;
+            padding: 5px;
+            margin: 5px;
+            border: none;
+                
+            &:hover{
+            @include btn-animation;
+            border-radius: 5px;
+            }
+        }
+        .current{
+            background-color: $background-btn-color;
+            color: white;
+            border-radius: 5px;
+        }
+    }
+}
