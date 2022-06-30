@@ -1,6 +1,6 @@
 class UI {
 
-    //get the select
+    
     getSelect(){
         const data = new Data
         data.getName()
@@ -21,7 +21,7 @@ class UI {
                 optionTo.value = x
                 optionTo.text = data[x]
                 
-                //append
+                //append to select
                 select.appendChild(optionFrom)
                 select2.appendChild(optionTo)
             }
@@ -30,7 +30,6 @@ class UI {
     }
     
 
-    //Convert function
     convert(data){
         const rates = data.rates
         //Take all the element to replace result
