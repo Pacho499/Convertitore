@@ -50,7 +50,7 @@ $primary-color:rgb(210, 194, 194);
 
 @mixin error-animation{
     animation-name: error;
-    animation-duration: 5s;
+    animation-duration: 7s;
 
     @keyframes error{
         from{
@@ -97,6 +97,8 @@ $primary-color:rgb(210, 194, 194);
         }
     }
 }
+
+
 
 
 

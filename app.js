@@ -32,7 +32,7 @@ function convert(e){
         
             setTimeout(() => {
                 div.remove()
-            }, 5000);
+            }, 7000);
             console.log(err)
     })
     e.preventDefault()

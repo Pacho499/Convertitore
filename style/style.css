@@ -251,13 +251,14 @@
 #hero .container .bot-side .results .error {
   -webkit-animation-name: error;
           animation-name: error;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
   font-weight: 900;
   font-size: 14px;
   padding-bottom: 10px;
   position: absolute;
   text-align: center;
+  color: white;
 }
 
 @-webkit-keyframes error {
@@ -318,6 +319,7 @@
 }
 
 #hero .container .bot-side .results a {
+  display: none;
   margin-top: 20px;
   color: black;
   text-decoration: none;

@@ -42,11 +42,12 @@ class UI {
         const newInfoButton = document.createElement('a')
         newInfoButton.textContent = 'INFORMAZIONI SULLA VALUTA SCELTA'
         newInfoButton.id = 'info'
+        newInfoButton.style = 'display:block'
         
         
         for (let x in rates){
             //Insert response
-            resultToReplace.textContent = `${data.amount} ${data.base} equals to ${(Math.round(rates[x] * 100) / 100).toFixed(2)} ${x}`
+            resultToReplace.textContent = `${data.amount} ${data.base} equivale a ${(Math.round(rates[x] * 100) / 100).toFixed(2)} ${x}`
             div.replaceChild(resultToReplace,result)
             newInfoButton.href = `./info.html#${x}`
             div.replaceChild(newInfoButton,infoButton)
